@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Online GitHub Atlas</title>
+    <!--add required stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <style>
+
+        body {
+            height: 100%;
+            padding: 40px;
+            margin: 40px;
+            font-family: Cairo, sans-serif;
+        }
+
+        .map {
+            padding: 10px;
+
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+            opacity: 0.9;
+            background-color: rgba(191, 241, 241, 0.9);
+            transition: 1s ease;
+        }
+
+        .overlay:hover {
+            opacity: 0.3;
+        }
+
+        .text {
+            color: #127a8e;
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-70%, -30%);
+        }
+    </style>
+
+    <!--add required javascript-->
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Page Header -->
+    <!--justify-content-center to center columns (col-*) inside row-->
+    <div class="row justify-content-center align-items-center">
+        <a href="#" target="_blank"><img src="img/S_Georgia_Glacial_Flour.jpg" height = 200 width = 250></a>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-12">
+            <h2>Online Atlas:</h2>
+            <hr>
+            <h4>GitHub Repositories</h4>
+        </div>
+    </div>
+
+    <hr>
+    <!--mx-auto for centering inside flex elements-->
+    <div class="row mx-auto text-center">
+
+        <div class="col-md-6 col-lg-6 map">
+            <img src="img/BranBlack3125.png" class="image" width="300" height="300">
+            <div class="overlay">
+                <div class="text"><h3><a href="/">Repository Name: BranBlack3125</a></h3>
+                    <small>Bran's Unofficial Resume</small>
+                    <input type="button" class="btn btn-info" value="Repository Link" onclick="location.href = 'https://github.com/BranBlack3125/BranBlack3125.github.io';">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 map">
+            <img src="img/Geog573Quizz3.PNG" class="image" width="300" height="300">
+            <div class="overlay">
+                <div class="text"><h3><a href="/">Repository Name: Geog 572 Quiz 3</a></h3>
+                    <small>Quiz 3 Post: Geog 572</small>
+                    <input type="button" class="btn btn-info" value="Repository Link" onclick="location.href = 'https://github.com/BranBlack3125/Geog572Quiz3';">
+                </div>
+            </div>
+        </div>
+        <div class="row mx-auto text-center">
+
+            <div class="col-md-6 col-lg-6 map">
+
+                <img src="img/sifviz.PNG" class="image" width="300" height="300" >
+                <div class="overlay">
+                    <div class="text"><h3><a href="/">Repository Name: sifviz</a></h3>
+                        <small>Working Area for Geovisualization</small>
+                        <input type="button" class="btn btn-info" value="Repository Link" onclick="location.href = 'https://github.com/BranBlack3125/sifviz';">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 map">
+                <img src="img/USAirportMap.PNG" class="image">
+                <div class="overlay">
+                    <div class="text"><h3><a href="/">Repository Name: USAirportMap</a></h3>
+                        <small>A map of US airports</small>
+                        <input type="button" class="btn btn-info" value="Repository Link" onclick="location.href = 'https://github.com/BranBlack3125/USAirportMap';">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <footer class="container">
+
+            <div class="row justify-content-center align-items-center">
+                <p> Bran Black, Oregon State University, Geog 572, Spring 2015 </p>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <a href="#" target="_blank"><img src="img/Mandelbroit.jpg"> </a>
+                <a href="#" target="_blank"><img src="img/fractaltree.jpg"> </a>
+                <a href="#" target="_blank"><img src="img/fractalwave.jpg"> </a>
+            </div>
+        </footer>
+
+</body>
+
+</html>
